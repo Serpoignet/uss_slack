@@ -1,0 +1,8 @@
+#notifications_lele: https://hooks.slack.com/services/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
+#notifications_gyorgi: https://hooks.slack.com/services/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
+#notifications_pedro: https://hooks.slack.com/services/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
+#notifications_raj: https://hooks.slack.com/services/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
+#notifications_foteini: https://hooks.slack.com/services/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
+#notifications_marcus: https://hooks.slack.com/services/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
+#notifications_saleha: https://hooks.slack.com/services/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
+#notifications_tosin: https://hooks.slack.com/services/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

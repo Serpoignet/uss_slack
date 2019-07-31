@@ -7,7 +7,7 @@
 
 To use :
 
-   * Step 1:: Go to messenger.py and fill in your hook variable in the init (constructor). Check the available functions while you're at it
+   * Step 1:: Go to messenger.py and fill in your hook variable in the init (you can find yours in the hooks.txt file). Check the available functions while you're at it
     
    * Step 2:: 'import uss_slack.messenger as uss' in your program
     
