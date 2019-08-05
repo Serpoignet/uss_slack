@@ -6,3 +6,4 @@
 #notifications_marcus: https://hooks.slack.com/services/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
 #notifications_saleha: https://hooks.slack.com/services/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
 #notifications_tosin: https://hooks.slack.com/services/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
+#notifications_gustav: https://hooks.slack.com/services/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
