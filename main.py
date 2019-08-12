@@ -6,7 +6,7 @@ print("USS module preparing to send a message")
 
 #print("__name__ value : ", __name__)
 
-hook = 
+hook = "https://hooks.slack.com/services/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"
 start = 0
 c_time = 0
 
