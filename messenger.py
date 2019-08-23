@@ -9,8 +9,10 @@ class messenger:
         self.c_time = 0
         
         if self.hook == None:
-            print("No hook defined, using default hook")
+            print("No hook given, using default hook")
             self.hook = "YOU FORGOT TO SET IT UP"
+            if self.hook == "YOU FORGOT TO SET IT UP":
+                print("ERROR : you forgot to set hook for uss messenger")
             return
         
         assert(hook != None)
@@ -47,6 +49,26 @@ class messenger:
         eta = self.c_time * (1/completion - 1)
         msg+= "Program will end in : " + str(int(eta)) + " seconds at : " + time.ctime(time.time() + eta)
         return msg
+
+    def make_pix_graph(self, shape):
+        l = len(shape)
+        m = max(shape)
+        a = [[] for i in range(m)]
+        for k in range(m):
+            for i in range(l):
+                if shape[i] > k:
+                    a[k].append("O")
+                else:
+                    a[k].append("X")
+                if i == l - 1:
+                    a[k].append("\n")
+        print(a)
+        mess = " "
+        for line in a:
+            for charac in line:
+                mess += charac + " "
+        print(mess)
+        return
 
     def ETA(self, current_epoch, total_epochs):
         return self.send(self.make_ETA(current_epoch, total_epochs))
