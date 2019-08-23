@@ -59,14 +59,14 @@ class messenger:
                 if shape[i] > k:
                     a[k].append("O")
                 else:
-                    a[k].append("X")
+                    a[k].append(".")
                 if i == l - 1:
                     a[k].append("\n")
         print(a)
-        mess = " "
+        mess = "     "
         for line in a:
             for charac in line:
-                mess += charac + " "
+                mess += charac + "     "
         print(mess)
         return
 
