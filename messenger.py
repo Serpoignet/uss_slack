@@ -9,10 +9,8 @@ class messenger:
         self.c_time = 0
         
         if self.hook == None:
-            print("No hook given, using default hook")
-            self.hook = "YOU FORGOT TO SET IT UP"
-            if self.hook == "YOU FORGOT TO SET IT UP":
-                print("ERROR : you forgot to set hook for uss messenger")
+            print("No hook defined, using default hook")
+            self.hook = "https://hooks.slack.com/services/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"
             return
         
         assert(hook != None)
@@ -72,7 +70,7 @@ class messenger:
             for charac in line:
                 mess += charac + "     "
         print(mess)
-        return
+        return mess
 
     def ETA(self, current_epoch, total_epochs):
         return self.send(self.make_ETA(current_epoch, total_epochs))
