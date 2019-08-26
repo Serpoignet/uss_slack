@@ -48,6 +48,26 @@ class messenger:
         msg+= "Program will end in : " + str(int(eta)) + " seconds at : " + time.ctime(time.time() + eta)
         return msg
 
+    def make_pix_graph(self, shape):
+        l = len(shape)
+        m = max(shape)
+        a = [[] for i in range(m)]
+        for k in range(m):
+            for i in range(l):
+                if shape[i] > k:
+                    a[k].append("O")
+                else:
+                    a[k].append(".")
+                if i == l - 1:
+                    a[k].append("\n")
+        print(a)
+        mess = "     "
+        for line in a:
+            for charac in line:
+                mess += charac + "     "
+        print(mess)
+        return mess
+
     def ETA(self, current_epoch, total_epochs):
         return self.send(self.make_ETA(current_epoch, total_epochs))
 
