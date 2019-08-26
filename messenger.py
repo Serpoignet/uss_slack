@@ -53,11 +53,15 @@ class messenger:
     def make_pix_graph(self, shape):
         l = len(shape)
         m = max(shape)
+        shape = [int((i/m)*20) for i in shape]
+        m = max(shape)
         a = [[] for i in range(m)]
         for k in range(m):
+            #print(int((m - k - 1)/2))
+            #print(int((m + k + 1)/2))
             for i in range(l):
-                if shape[i] > k:
-                    a[k].append("O")
+                if k > m/2 - shape[i]/2 - 1 and k < m/2 + shape[i]/2:
+                    a[k].append("0")
                 else:
                     a[k].append(".")
                 if i == l - 1:
